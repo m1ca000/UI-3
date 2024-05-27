@@ -190,6 +190,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 288171652}
+  - component: {fileID: 288171653}
   m_Layer: 0
   m_Name: LoginManager
   m_TagString: Untagged
@@ -211,6 +212,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &288171653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 288171651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5fb28341de708d45a3c72f353418b72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Input_Password: {fileID: 1912228759}
+  Password: Mica
 --- !u!1 &288967686
 GameObject:
   m_ObjectHideFlags: 0
@@ -424,8 +439,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -59.1}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -3.2, y: -55.3}
+  m_SizeDelta: {x: 199.53458, y: 50.40497}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &521350335
 MonoBehaviour:
@@ -466,7 +481,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 521350336}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 288171653}
+        m_MethodName: "contrase\xF1a"
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &521350336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -784,10 +810,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 23
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 0
     m_MaxSize: 40
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -861,7 +887,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
+    m_FontSize: 24
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
@@ -872,7 +898,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Aceptar
 --- !u!222 &1851233900
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -894,7 +920,7 @@ GameObject:
   - component: {fileID: 1912228760}
   - component: {fileID: 1912228759}
   m_Layer: 5
-  m_Name: InputField
+  m_Name: InputField_Password
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -960,8 +986,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1912228760}
   m_TextComponent: {fileID: 1482152111}
   m_Placeholder: {fileID: 317767988}
-  m_ContentType: 0
-  m_InputType: 0
+  m_ContentType: 7
+  m_InputType: 2
   m_AsteriskChar: 42
   m_KeyboardType: 0
   m_LineType: 0
@@ -1052,7 +1078,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000011394, y: -37}
+  m_AnchoredPosition: {x: 0, y: -37}
   m_SizeDelta: {x: -339.21527, y: -229.91113}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1921926761
